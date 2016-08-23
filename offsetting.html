@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Offsetting - BootTuT</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="containerz">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand">
+          Home
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="collapsemenu">
+        <ul class="nav navbar-nav">
+          <li><a href="containers.html">Containers</a></li>
+          <li><a href="rows.html">Rows</a></li>
+          <li><a href="breakpoints.html">Break Points</a></li>
+          <li><a href="clearfix.html">Clearfix</a></li>
+          <li><a href="offsetting.html">Offsetting Columns</a></li>
+          <li><a href="styles.html">Styles</a></li>
+          <li><a href="lists.html">Lists</a></li>
+          <li><a href="tables.html">Tables</a></li>
+          <li><a href="code.html">Code</a></li>
+          <li><a href="buttons.html">Buttons</a></li>
+          <li><a href="responsive.html">Responsive Utilities</a></li>
+          <li><a href="images.html">Image Classes</a></li>
+          <li><a href="forms.html">All About Forms</a></li>
+          <li><a href="navigation.html">Navigation</a></li>
+          <li><a href="javascript.html">Javascript</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="spacer"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Offsetting Columns</h1>
+        <p>Lets say for instance at the smallest, mobile layout we want the content to be more... together. Not a long sentense like we see below. On the demo below this one, i'll go over what we can use to fix the issue at hand.</p>
+
+        <div class="services container">
+          <h2>Services</h2>
+          <div class="row">
+            <section class="col-sm-6 col-md-4 col-lg-2">
+              <img class="icon" src="img/icon-health.svg" alt="Icon">
+              <h3>GeneralHealth</h3>
+              <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general health services.</p>
+            </section>
+
+            <section class="col-sm-6 col-md-4 col-lg-2">
+              <img class="icon" src="img/icon-exoticpets.svg" alt="Icon">
+              <h3>Exotic Pets</h3>
+              <p>We offer specialized care for reptiles, rodents, birds, and other exotic pets.</p>
+            </section>
+
+            <div class="clearfix visible-sm-block"></div>
+
+            <section class="col-sm-6 col-md-4 col-lg-2">
+              <img class="icon" src="img/icon-grooming.svg" alt="Icon">
+              <h3>Grooming</h3>
+              <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions.</p>
+            </section>
+
+            <section class="col-sm-6 col-md-4 col-lg-2">
+              <img class="icon" src="img/icon-nutrition.svg" alt="Icon">
+              <h3>Nutrition</h3>
+              <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition plan for optimum health and disease prevention.</p>
+            </section>
+
+            <section class="col-sm-6 col-md-4 col-lg-2">
+              <img class="icon" src="img/icon-pestcontrol.svg" alt="Icon">
+              <h3>Pest Control</h3>
+              <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks, worms, heart worm, and other parasites.</p>
+            </section>
+
+            <section class="col-sm-6 col-md-4 col-lg-2">
+              <img class="icon" src="img/icon-vaccinations.svg" alt="Icon">
+              <h3>Vaccinations</h3>
+              <p>Our veterinarians are experienced in modern vaccination protocols that prevent many of the deadliest diseases in pets.</p>
+            </section>
+          </div><!-- row -->
+        </div><!-- content container -->
+
+        <h1>Demo</h1>
+        <p>So in this case, the class (in full) that we used, is:<br>
+        col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2<br>
+        Now thats a lot. So we'll go over this chunk by chunk.<br>
+        The col-xs-offset-3 Is setting it to be offset by three at the breakpoint. The only issue is that this will persist through all of the larger breakpoints as well. So after we hit the col-sm-6 breakpoint, right before it, we want to put col-sm-offset-0 so that the offset, is set back to zero right before we start hitting the next breakpoint.</p>
+
+        <div class="services container">
+          <h2>Services</h2>
+          <div class="row">
+            <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+              <img class="icon" src="img/icon-health.svg" alt="Icon">
+              <h3>GeneralHealth</h3>
+              <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general health services.</p>
+            </section>
+
+            <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+              <img class="icon" src="img/icon-exoticpets.svg" alt="Icon">
+              <h3>Exotic Pets</h3>
+              <p>We offer specialized care for reptiles, rodents, birds, and other exotic pets.</p>
+            </section>
+
+            <div class="clearfix visible-sm-block"></div>
+
+            <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+              <img class="icon" src="img/icon-grooming.svg" alt="Icon">
+              <h3>Grooming</h3>
+              <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions.</p>
+            </section>
+
+            <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+              <img class="icon" src="img/icon-nutrition.svg" alt="Icon">
+              <h3>Nutrition</h3>
+              <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition plan for optimum health and disease prevention.</p>
+            </section>
+
+            <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+              <img class="icon" src="img/icon-pestcontrol.svg" alt="Icon">
+              <h3>Pest Control</h3>
+              <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks, worms, heart worm, and other parasites.</p>
+            </section>
+
+            <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-6 col-md-4 col-lg-2">
+              <img class="icon" src="img/icon-vaccinations.svg" alt="Icon">
+              <h3>Vaccinations</h3>
+              <p>Our veterinarians are experienced in modern vaccination protocols that prevent many of the deadliest diseases in pets.</p>
+            </section>
+          </div><!-- row -->
+        </div><!-- content container -->
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<!-- End Document–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="scripts/menu.js"></script>
+
+
+</html>

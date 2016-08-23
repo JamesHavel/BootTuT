@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Containers - BootTuT</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="containerz">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand">
+          Home
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="collapsemenu">
+        <ul class="nav navbar-nav">
+          <li><a href="containers.html">Containers</a></li>
+          <li><a href="rows.html">Rows</a></li>
+          <li><a href="breakpoints.html">Break Points</a></li>
+          <li><a href="clearfix.html">Clearfix</a></li>
+          <li><a href="offsetting.html">Offsetting Columns</a></li>
+          <li><a href="styles.html">Styles</a></li>
+          <li><a href="lists.html">Lists</a></li>
+          <li><a href="tables.html">Tables</a></li>
+          <li><a href="code.html">Code</a></li>
+          <li><a href="buttons.html">Buttons</a></li>
+          <li><a href="responsive.html">Responsive Utilities</a></li>
+          <li><a href="images.html">Image Classes</a></li>
+          <li><a href="forms.html">All About Forms</a></li>
+          <li><a href="navigation.html">Navigation</a></li>
+          <li><a href="javascript.html">Javascript</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="spacer"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>All about <i>containers</i>.</h1>
+        <legend><i>To contain all things that need to be contained...</i></legend>
+
+        <div class="container-fluid">
+          <h1>Fluid</h1>
+          <h3><pre>class="container-fluid"</pre></h3>
+          <p>This is a fluid container. When resizing the browser, the text will always be a certain length away from the egde of the container. This one can't be demonstraited as well because of the current containers of this code. But if you get to a small enough breakpoint, you will see ALL the text start to move and rush around themselves, adhearing to get to the edge of the container as best they can.</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illum aperiam enim dicta, laboriosam quam doloremque, fuga ullam consequatur animi fugiat, dolor doloribus laborum! Delectus maiores ducimus sed autem quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam vero maxime quia, officiis dignissimos, impedit optio recusandae minima laboriosam dolorum quisquam sunt odio ipsam temporibus error dolore perspiciatis provident modi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam fugiat voluptatum possimus molestias eveniet perspiciatis eaque architecto natus beatae veniam illum eius facere rem magni totam ducimus reiciendis, vitae, dolor.</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque omnis voluptatibus harum aperiam velit at voluptatem odio, exercitationem cupiditate enim alias unde optio rem ipsum. Ea dolor rerum, fugiat odio? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eligendi itaque est ut voluptas veritatis officia dolor aspernatur officiis iste, delectus non optio magnam laborum fugiat temporibus quasi facere cumque.</p>
+        </div>
+
+        <div class="bgimageDefault">
+          <div class="container">
+            <h1>Fixed-Width</h1>
+            <h3><pre>class="container"</pre></h3>
+            <p>This is a fixed-width container. There is still padding on each side, but the container adjusts to media query breakpoints instead of being fluid. It will always keep itself center, but it will also always make sure all the content is within the view of whatever viewport is being used. Assuming it is being used correctly.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illum aperiam enim dicta, laboriosam quam doloremque, fuga ullam consequatur animi fugiat, dolor doloribus laborum! Delectus maiores ducimus sed autem quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam vero maxime quia, officiis dignissimos, impedit optio recusandae minima laboriosam dolorum quisquam sunt odio ipsam temporibus error dolore perspiciatis provident modi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam fugiat voluptatum possimus molestias eveniet perspiciatis eaque architecto natus beatae veniam illum eius facere rem magni totam ducimus reiciendis, vitae, dolor.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque omnis voluptatibus harum aperiam velit at voluptatem odio, exercitationem cupiditate enim alias unde optio rem ipsum. Ea dolor rerum, fugiat odio? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eligendi itaque est ut voluptas veritatis officia dolor aspernatur officiis iste, delectus non optio magnam laborum fugiat temporibus quasi facere cumque.</p>
+          </div>
+        </div>
+
+
+
+        <header class="bgimage">
+          <div class="container">
+            <h1>A Background Image</h1>
+            <h3><pre>class="bgimage"</pre></h3>
+            <p>This is to showcase how not everything has to go into a container. In this case we have a header with the class of "bgimage" outside of our div with the class of "container" If you resize your browser, youll see that the background image will adjust apropriately depending on the size. This also applies to how much content is in the container. Also keep in mind colors, as you can see some of this text can be hard to read.</p>
+          </div>
+        </header>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<!-- End Document–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="scripts/menu.js"></script>
+
+
+</html>

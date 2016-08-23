@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Tables - BootTuT</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="containerz">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand">
+          Home
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="collapsemenu">
+        <ul class="nav navbar-nav">
+          <li><a href="containers.html">Containers</a></li>
+          <li><a href="rows.html">Rows</a></li>
+          <li><a href="breakpoints.html">Break Points</a></li>
+          <li><a href="clearfix.html">Clearfix</a></li>
+          <li><a href="offsetting.html">Offsetting Columns</a></li>
+          <li><a href="styles.html">Styles</a></li>
+          <li><a href="lists.html">Lists</a></li>
+          <li><a href="tables.html">Tables</a></li>
+          <li><a href="code.html">Code</a></li>
+          <li><a href="buttons.html">Buttons</a></li>
+          <li><a href="responsive.html">Responsive Utilities</a></li>
+          <li><a href="images.html">Image Classes</a></li>
+          <li><a href="forms.html">All About Forms</a></li>
+          <li><a href="navigation.html">Navigation</a></li>
+          <li><a href="javascript.html">Javascript</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="spacer"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Tables</h1>
+        <h3>There isn't too much to these either...</h3>
+        <h5>Non-edited</h5>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Color</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Normal</th>
+              <td>Default</td>
+              <td>Default color to a particular row or cell</td>
+            </tr>
+            <tr>
+              <th scope="row">active</th>
+              <td>Gray</td>
+              <td>Active color to a particular row or cell</td>
+            </tr>
+            <tr>
+              <th scope="row">success</th>
+              <td>Green</td>
+              <td>A successful or positive action</td>
+            </tr>
+            <tr>
+              <th scope="row">info</th>
+              <td>Blue</td>
+              <td>A neutral informative change or action</td>
+            </tr>
+            <tr>
+              <th scope="row">warning</th>
+              <td>Yellow</td>
+              <td>A warning that might need attention, but not too scary</td>
+            </tr>
+            <tr>
+              <th scope="row">danger</th>
+              <td>Red</td>
+              <td>Dangerous or potentially negative action</td>
+            </tr>
+          </tbody>
+        </table>
+        </section>
+
+        <br>
+        <h3>Demo</h3>
+        <h5>Edited</h5>
+
+        <p>You can use:</p>
+        <ul>
+          <li>table</li>
+          <li>table-striped</li>
+          <li>table-bordered</li>
+          <li>table-hover</li>
+          <li>table-condensed</li>
+          <li>A responsive parent div</li>
+          <li>active / info / warning / danger / success</li>
+        </ul><br>
+
+        <div class="reponsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Color</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Normal</th>
+                <td>Default</td>
+                <td>Default color to a particular row or cell</td>
+              </tr>
+              <tr class="active">
+                <th scope="row">active</th>
+                <td>Gray</td>
+                <td>Active color to a particular row or cell</td>
+              </tr>
+              <tr class="success">
+                <th scope="row">success</th>
+                <td>Green</td>
+                <td>A successful or positive action</td>
+              </tr>
+              <tr class="info">
+                <th scope="row">info</th>
+                <td>Blue</td>
+                <td>A neutral informative change or action</td>
+              </tr>
+              <tr class="warning">
+                <th scope="row">warning</th>
+                <td>Yellow</td>
+                <td>A warning that might need attention, but not too scary</td>
+              </tr>
+              <tr class="danger">
+                <th scope="row">danger</th>
+                <td>Red</td>
+                <td>Dangerous or potentially negative action</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<!-- End Document–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="scripts/menu.js"></script>
+
+
+</html>

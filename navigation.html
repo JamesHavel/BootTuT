@@ -1,0 +1,420 @@
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Navigation - BootTuT</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="containerz">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand">
+          Home
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="collapsemenu">
+        <ul class="nav navbar-nav">
+          <li><a href="containers.html">Containers</a></li>
+          <li><a href="rows.html">Rows</a></li>
+          <li><a href="breakpoints.html">Break Points</a></li>
+          <li><a href="clearfix.html">Clearfix</a></li>
+          <li><a href="offsetting.html">Offsetting Columns</a></li>
+          <li><a href="styles.html">Styles</a></li>
+          <li><a href="lists.html">Lists</a></li>
+          <li><a href="tables.html">Tables</a></li>
+          <li><a href="code.html">Code</a></li>
+          <li><a href="buttons.html">Buttons</a></li>
+          <li><a href="responsive.html">Responsive Utilities</a></li>
+          <li><a href="images.html">Image Classes</a></li>
+          <li><a href="forms.html">All About Forms</a></li>
+          <li><a href="navigation.html">Navigation</a></li>
+          <li><a href="javascript.html">Javascript</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="spacer"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Dropdowns</h1>
+        <p>Play with it all, thats how you learn.</p>
+
+        <button type="button"
+          class="btn btn-info">Game Name</button>
+
+        <ul>
+          <li><a href="#">Overwatch</a></li>
+          <li><a href="#">World of Warcraft</a></li>
+          <li><a href="#">League of Legends</a></li>
+          <li><a href="#">Counter Strike: Global Offensive</a></li>
+          <li><a href="#">Counter Strike: Source</a></li>
+          <li><a href="#">Clicker Heros</a></li>
+          <li><a href="#">Star Citizen</a></li>
+        </ul><br>
+
+        <legend>What was used for the above:</legend>
+        <pre>
+          <script type="text/plain">
+          <button type="button"
+            class="btn btn-info">Game Name</button>
+
+          <ul>
+            <li><a href="#">Overwatch</a></li>
+            <li><a href="#">World of Warcraft</a></li>
+            <li><a href="#">League of Legends</a></li>
+            <li><a href="#">Counter Strike: Global Offensive</a></li>
+            <li><a href="#">Counter Strike: Source</a></li>
+            <li><a href="#">Clicker Heros</a></li>
+            <li><a href="#">Star Citizen</a></li>
+          </ul><br>
+          </script>
+        </pre>
+
+        <h2>Demo</h2>
+
+        <div class="dropdown">
+          <div class="btn-group">
+            <button type="button" data-toggle="dropdown" id="gametype" class="btn btn-info dropdown-toggle" aria-haspopup="true" aria-expanded="false">Game Name
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+            </button>
+
+            <ul class="dropdown-menu" aria-labelledby="gametype">
+              <li class="dropdown-header">Nerds</li>
+              <li><a href="#">Overwatch</a></li>
+              <li><a href="#">World of Warcraft</a></li>
+              <li class="disabled"><a href="#">League of Legends</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Counter Strike: Global Offensive</a></li>
+              <li><a href="#">Counter Strike: Source</a></li>
+              <li><a href="#">Clicker Heros</a></li>
+              <li><a href="#">Star Citizen</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <br><legend>What was used in the above demo:</legend>
+        <pre>
+          <script type="text/plain">
+          <div class="dropdown">
+            <div class="btn-group">
+              <button type="button" data-toggle="dropdown" id="gametype" class="btn btn-info dropdown-toggle" aria-haspopup="true" aria-expanded="false">Game Name
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+              </button>
+
+              <ul class="dropdown-menu" aria-labelledby="gametype">
+                <li class="dropdown-header">Nerds</li>
+                <li><a href="#">Overwatch</a></li>
+                <li><a href="#">World of Warcraft</a></li>
+                <li class="disabled"><a href="#">League of Legends</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Counter Strike: Global Offensive</a></li>
+                <li><a href="#">Counter Strike: Source</a></li>
+                <li><a href="#">Clicker Heros</a></li>
+                <li><a href="#">Star Citizen</a></li>
+              </ul>
+            </div>
+          </div>
+          </script>
+        </pre>
+
+        <h1>Button Groups</h1>
+        <button type="button"class="btn btn-default">Cat</button>
+        <button type="button"class="btn btn-default">Dog</button>
+        <button type="button"class="btn btn-default">Fish</button>
+        <button type="button"class="btn btn-default">Bird</button>
+
+        <button type="button"class="btn btn-default">Amphibian</button>
+        <button type="button"class="btn btn-default">Reptile</button>
+        <button type="button"class="btn btn-default">Other</button>
+
+        <br><br>
+        <pre>
+          <script type="text/plain">
+          <button type="button"class="btn btn-default">Cat</button>
+          <button type="button"class="btn btn-default">Dog</button>
+          <button type="button"class="btn btn-default">Fish</button>
+          <button type="button"class="btn btn-default">Bird</button>
+
+          <button type="button"class="btn btn-default">Amphibian</button>
+          <button type="button"class="btn btn-default">Reptile</button>
+          <button type="button"class="btn btn-default">Other</button>
+          </script>
+        </pre>
+
+
+        <h2>Demo</h2>
+
+        <h3>Horizontal</h3>
+
+        <div class="btn-toolbar" role="toolbar" aria-label="...">
+          <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">Cat</button>
+            <button type="button" class="btn btn-default">Dog</button>
+            <button type="button" class="btn btn-default">Fish</button>
+            <button type="button" class="btn btn-default">Bird</button>
+            <button type="button" class="btn btn-default">Amphibian</button>
+            <button type="button" class="btn btn-default">Reptile</button>
+            <button type="button" class="btn btn-default">Other</button>
+          </div>
+        </div>
+
+        <br><pre>
+          <script type="text/plain">
+          <div class="btn-toolbar" role="toolbar" aria-label="...">
+            <div class="btn-group" role="group" aria-label="...">
+              <button type="button" class="btn btn-default">Cat</button>
+              <button type="button" class="btn btn-default">Dog</button>
+              <button type="button" class="btn btn-default">Fish</button>
+              <button type="button" class="btn btn-default">Bird</button>
+              <button type="button" class="btn btn-default">Amphibian</button>
+              <button type="button" class="btn btn-default">Reptile</button>
+              <button type="button" class="btn btn-default">Other</button>
+            </div>
+          </div>
+          </script>
+        </pre>
+
+        <br><br><h3>Vertical</h3>
+
+        <div class="btn-toolbar" role="toolbar" aria-label="...">
+          <div class="btn-group-vertical" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">Cat</button>
+            <button type="button" class="btn btn-default">Dog</button>
+            <button type="button" class="btn btn-default">Fish</button>
+            <button type="button" class="btn btn-default">Bird</button>
+            <button type="button" class="btn btn-default">Amphibian</button>
+            <button type="button" class="btn btn-default">Reptile</button>
+            <button type="button" class="btn btn-default">Other</button>
+          </div>
+        </div>
+
+      <br><pre>
+        <script type="text/plain">
+        <div class="btn-toolbar" role="toolbar" aria-label="...">
+          <div class="btn-group-vertical" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">Cat</button>
+            <button type="button" class="btn btn-default">Dog</button>
+            <button type="button" class="btn btn-default">Fish</button>
+            <button type="button" class="btn btn-default">Bird</button>
+            <button type="button" class="btn btn-default">Amphibian</button>
+            <button type="button" class="btn btn-default">Reptile</button>
+            <button type="button" class="btn btn-default">Other</button>
+          </div>
+        </div>
+        </script>
+      </pre>
+
+        <br><h3>Take full width of container</h3>
+
+        <p>It's just <code>btn-group-justified</code></p>
+
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+          <div class="btn-group" role="group"><button type="button" class="btn btn-default">Cat</button></div>
+          <div class="btn-group" role="group"><button type="button" class="btn btn-default">Dog</button></div>
+          <div class="btn-group" role="group"><button type="button" class="btn btn-default">Fish</button></div>
+          <div class="btn-group" role="group"><button type="button" class="btn btn-default">Bird</button></div>
+          <div class="btn-group" role="group"><button type="button" class="btn btn-default">Amphibian</button></div>
+          <div class="btn-group" role="group"><button type="button" class="btn btn-default">Reptile</button></div>
+          <div class="btn-group" role="group"><button type="button" class="btn btn-default">Other</button></div>
+        </div>
+
+        <h1>Nav Comps</h1>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Mission</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Staff</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+
+      <h2>Demo</h2>
+
+      <ul>
+        <li>nav-tabs</li>
+        <li>nav-pills</li>
+        <li>navbar-nav</li>
+        <li>nav-justify</li>
+        <li>navbar-default</li>
+        <li>navbar-inverse</li>
+        <li>navbar-fixed-bottom</li>
+        <li>navbar-fixed-top</li>
+        <li>navbar-text</li>
+        <li>navbar-header</li>
+        <li>navbar-brand</li>
+        <li>navbar-btn</li>
+        <li>breadcrumb</li>
+        <li>pager</li>
+        <li>pagination</li>
+      </ul>
+
+      <br>
+
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="#" class="navbar-brand">
+              Wisdom
+            </a>
+          </div>
+          <p class="navbar-text">Some Text!</p>
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Mission</a></li>
+            <li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">This</a></li>
+                <li><a href="#">Is</a></li>
+                <li><a href="#">A</a></li>
+                <li><a href="#">Demo</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Staff</a></li>
+            <li><a href="#">Testimonials</a></li>
+          </ul>
+
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Go</button>
+          </form>
+        </div>
+      </nav>
+
+      <pre>
+        <script type="text/plain">
+          <nav class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+                <a href="#" class="navbar-brand">
+                  Wisdom
+                </a>
+              </div>
+              <p class="navbar-text">Some Text!</p>
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#">Mission</a></li>
+                <li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">This</a></li>
+                    <li><a href="#">Is</a></li>
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">Demo</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Staff</a></li>
+                <li><a href="#">Testimonials</a></li>
+              </ul>
+
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Go</button>
+              </form>
+            </div>
+          </nav>
+        </script>
+      </pre>
+
+        <br>
+        <legend><h2>Oh so you want it to collapse at a breakpoint?</h2></legend>
+        <h4>Shrink your browser so you can see!</h4><br>
+
+        <nav class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="#" class="navbar-brand">
+                Wisdom
+              </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="collapsemenu">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Mission</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Staff</a></li>
+                <li><a href="#">Testimonials</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <pre>
+          <script type="text/plain">
+            <nav class="navbar navbar-default">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a href="#" class="navbar-brand">
+                    Wisdom
+                  </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="collapsemenu">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Mission</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </script>
+        </pre>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<!-- End Document–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="js/jquery-4.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+
+</html>

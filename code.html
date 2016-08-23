@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Formatting Code - BootTuT</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="containerz">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand">
+          Home
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="collapsemenu">
+        <ul class="nav navbar-nav">
+          <li><a href="containers.html">Containers</a></li>
+          <li><a href="rows.html">Rows</a></li>
+          <li><a href="breakpoints.html">Break Points</a></li>
+          <li><a href="clearfix.html">Clearfix</a></li>
+          <li><a href="offsetting.html">Offsetting Columns</a></li>
+          <li><a href="styles.html">Styles</a></li>
+          <li><a href="lists.html">Lists</a></li>
+          <li><a href="tables.html">Tables</a></li>
+          <li><a href="code.html">Code</a></li>
+          <li><a href="buttons.html">Buttons</a></li>
+          <li><a href="responsive.html">Responsive Utilities</a></li>
+          <li><a href="images.html">Image Classes</a></li>
+          <li><a href="forms.html">All About Forms</a></li>
+          <li><a href="navigation.html">Navigation</a></li>
+          <li><a href="javascript.html">Javascript</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="spacer"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Formatting Code</h1>
+        <p>You have:</p>
+
+        <h3>Inline Code</h3>
+        <p>Use the <code>Code Tag</code> which will make it look like code. So in this case I can paste a random bit of code like so:<br><code>.icon {
+          max-width: 150px;
+          margin: 0 auto;
+          display: block;
+        }</code>You might have to style it a bit by yourself though if you want it to look neat.</p>
+
+        <h3>Control Keys</h3>
+        <p>Use the <code>kbd</code> code to make it look as that example is. Useful if you want someone to use a certain key. Example like so: Use the <kbd>q</kbd> key.</p>
+
+        <h3>Short Script Snippits</h3>
+        <p>A way better way to paste code would be to use the <code>pre</code> tag. Using it will make anything look like so:<br><br><pre>.bgimage {
+          background-position: center center;
+          background-size: cover;
+          background-image: url('../img/cat.jpg');
+          .container {
+            p, h1 {
+              color: white;
+              text-shadow: 2px 2px black;
+              font-weight: bold;
+              font-size: 20px;
+            }
+          }
+        }</pre></p>
+
+        <h3>Long Script Snippits</h3>
+        <p>Like above, just better for longer scripts. Use the <code>pre class="pre-scrollable"</code> tag.</p>
+
+        <pre class="pre-scrollable">
+          @-ms-keyframes rainbow {
+          0% {color: #ff0000;}
+          10% {color: #ff8000;}
+          20% {color: #ffff00;}
+          30% {color: #80ff00;}
+          40% {color: #00ff00;}
+          50% {color: #00ff80;}
+          60% {color: #00ffff;}
+          70% {color: #0080ff;}
+          80% {color: #0000ff;}
+          90% {color: #8000ff;}
+          100% {color: #ff0080;}
+          }
+          @-o-keyframes rainbow {
+          0% {color: #ff0000;}
+          10% {color: #ff8000;}
+          20% {color: #ffff00;}
+          30% {color: #80ff00;}
+          40% {color: #00ff00;}
+          50% {color: #00ff80;}
+          60% {color: #00ffff;}
+          70% {color: #0080ff;}
+          80% {color: #0000ff;}
+          90% {color: #8000ff;}
+          100% {color: #ff0080;}
+          }
+          @keyframes rainbow {
+          0% {color: #ff0000;}
+          10% {color: #ff8000;}
+          20% {color: #ffff00;}
+          30% {color: #80ff00;}
+          40% {color: #00ff00;}
+          50% {color: #00ff80;}
+          60% {color: #00ffff;}
+          70% {color: #0080ff;}
+          80% {color: #0000ff;}
+          90% {color: #8000ff;}
+          100% {color: #ff0080;}
+          }
+        </pre>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<!-- End Document–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="scripts/menu.js"></script>
+
+
+</html>

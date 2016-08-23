@@ -1,0 +1,587 @@
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Forms - BootTuT</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="containerz">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html" class="navbar-brand">
+          Home
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="collapsemenu">
+        <ul class="nav navbar-nav">
+          <li><a href="containers.html">Containers</a></li>
+          <li><a href="rows.html">Rows</a></li>
+          <li><a href="breakpoints.html">Break Points</a></li>
+          <li><a href="clearfix.html">Clearfix</a></li>
+          <li><a href="offsetting.html">Offsetting Columns</a></li>
+          <li><a href="styles.html">Styles</a></li>
+          <li><a href="lists.html">Lists</a></li>
+          <li><a href="tables.html">Tables</a></li>
+          <li><a href="code.html">Code</a></li>
+          <li><a href="buttons.html">Buttons</a></li>
+          <li><a href="responsive.html">Responsive Utilities</a></li>
+          <li><a href="images.html">Image Classes</a></li>
+          <li><a href="forms.html">All About Forms</a></li>
+          <li><a href="navigation.html">Navigation</a></li>
+          <li><a href="javascript.html">Javascript</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="spacer"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Forms</h1>
+        <p>Oh dear lord is there so much...</p>
+
+        <p>I'll start with the first, unedited form. At the bottom I will just make a giant list of the features you can use.</p>
+
+        <form>
+          <label for="inputName">Name</label>
+          <input type="text" id="inputName"
+            placeholder="Name">
+
+          <label for="inputEmail">Email</label>
+          <input type="email" id="inputEmail"
+            placeholder="Email">
+
+          <label for="selectSite">Site</label>
+          <select id="selectSite">
+            <option>Choose...</option>
+            <option>Youtube.com</option>
+            <option>Reddit.com</option>
+            <option>Warriorsfury.com</option>
+          </select>
+
+          <input id="inputAddList" type="checkbox">
+          <label for="inputAddList">
+          Add me to e-mail blast</label>
+
+          <label for="inputComments">Comments</label>
+          <textarea id="inputComments"></textarea>
+
+          <input type="submit" value="submit">
+        </form>
+
+        <h2>Demo</h2>
+
+        <form>
+          <div class="form-group">
+            <label for="inputName">Name</label>
+            <input class="form-control" type="text" id="inputName"
+              placeholder="Name">
+          </div>
+
+          <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input class="form-control" type="email" id="inputEmail"
+              placeholder="Email">
+          </div>
+
+          <div class="form-group">
+            <label for="selectSite">Site</label>
+            <select class="form-control" id="selectSite">
+              <option>Choose...</option>
+              <option>Youtube.com</option>
+              <option>Reddit.com</option>
+              <option>Warriorsfury.com</option>
+            </select>
+          </div>
+
+          <input id="inputAddList" type="checkbox">
+          <label for="inputAddList">
+          Add me to e-mail blast</label>
+
+          <div class="form-group">
+            <label for="inputComments">Comments</label>
+            <textarea class="form-control" id="inputComments"></textarea>
+          </div>
+
+          <input class="btn btn-default pull-right" type="submit" value="submit">
+        </form>
+
+        <p>In this, the following was used:</p>
+        <ul>
+          <li>A div with a class of <code>form-group</code></li>
+          <ul>
+            <li>form-group would make it look nice, and give it some padding.</li>
+          </ul>
+          <li>Inputs with the class of <code>form-control</code></li>
+          <ul>
+            <li>Form-control would make it take up the whole width. Making that "row" itself look good, not really caring about what is around it. Like the selfish little brat it is.</li>
+          </ul>
+        </ul>
+
+        <h2>Checkboxes and Radios</h2>
+
+        <p>Same as above. And this will apply to every "section" from now on.</p>
+
+        <form>
+          <div class="form-group">
+            <label for="inputName">Name</label>
+            <input class="form-control" type="text"
+              id="inputName" placeholder="Your Name">
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              One
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              Two
+            </label>
+          </div>
+          <input class="btn btn-default"
+            type="submit" value="submit">
+        </form>
+
+        <h2>Demo</h2>
+
+        <form>
+          <div class="form-group">
+            <label for="inputName">Name</label>
+            <input class="form-control" type="text"
+              id="inputName" placeholder="Your Name">
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              One
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              Two
+            </label>
+          </div>
+
+          <div class="radio" name="option">
+            <label>
+              <input type="radio" name="option">
+              Red
+            </label>
+          </div>
+
+          <div name="option" class="radio">
+            <label>
+              <input name="option"  type="radio">
+              Blue
+            </label>
+          </div>
+
+          <br>
+
+          <div class="checkbox disabled">
+            <label>
+              <input type="checkbox" disabled>
+              Disabled
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              Two
+            </label>
+          </div>
+
+
+          <div class="form-group">
+            <label class="radio-inline">
+              <input type="radio" name="option">
+              Red
+            </label>
+
+            <label class="radio-inline">
+              <input name="option"  type="radio">
+              Blue
+            </label>
+
+          <input class="btn btn-default"
+            type="submit" value="submit">
+          </div>
+        </form>
+
+        <p>In this the following was used:</p>
+        <ul>
+          <li>Honestly you should just look at the source code. Hard to explain through text. I'll put it below. But I WILL be removing the <code><</code> before every tag on the left of each line so that the code doesn't go through. So you can see it. Otherwise it would look broken.</li>
+        </ul>
+
+        <pre>
+          <script type="text/plain">
+            <form>
+              <div class="form-group">
+                <label for="inputName">Name</label>
+                <input class="form-control" type="text"
+                  id="inputName" placeholder="Your Name">
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">
+                  One
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">
+                  Two
+                </label>
+              </div>
+
+              <div class="radio" name="option">
+                <label>
+                  <input type="radio" name="option">
+                  Red
+                </label>
+              </div>
+
+              <div name="option" class="radio">
+                <label>
+                  <input name="option"  type="radio">
+                  Blue
+                </label>
+              </div>
+
+              <br>
+
+              <div class="checkbox disabled">
+                <label>
+                  <input type="checkbox" disabled>
+                  Disabled
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">
+                  Two
+                </label>
+              </div>
+
+
+              <div class="form-group">
+                <label class="radio-inline">
+                  <input type="radio" name="option">
+                  Red
+                </label>
+
+                <label class="radio-inline">
+                  <input name="option"  type="radio">
+                  Blue
+                </label>
+
+              <input class="btn btn-default"
+                type="submit" value="submit">
+              </div>
+            </form>
+          </script>
+        </pre>
+
+        <h1>Inline Forms</h1>
+
+        <form>
+          <div class="form-group">
+            <label for="inputEmail">
+              Email address
+            </label>
+            <input type="email" class="form-control"
+              id="inputEmail" placeholder="Email">
+          </div>
+
+          <div class="form-group">
+            <label
+              for="inputPassword">Password</label>
+            <input type="password" class="form-control"
+              id="inputPassword" placeholder="Password">
+          </div>
+
+          <button type="submit"
+            class="btn btn-default">Sign in</button>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+          </div>
+        </form>
+
+        <h2>Demo</h2>
+
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="inputEmail">
+              Email address
+            </label>
+            <input type="email" class="form-control"
+              id="inputEmail" placeholder="Email">
+          </div>
+
+          <div class="form-group">
+            <label
+              for="inputPassword">Password</label>
+            <input type="password" class="form-control"
+              id="inputPassword" placeholder="Password">
+          </div>
+
+          <button type="submit"
+            class="btn btn-default">Sign in</button>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+          </div>
+        </form>
+
+        <p>Remember that this as a whole (After applying the first <code>form-inline</code> code, will only work with medium sizes and up)</p>
+        <p>This was the code that was used during this demo:</p>
+        <ul>
+          <li>A <code>form</code> tag with <code>form-inline</code> as a class.</li>
+        </ul>
+
+        <h1>Some Styles</h1>
+
+        <form>
+        <div class="form-group">
+          <label for="inputName">Name</label>
+          <input class="form-control" type="text"
+            id="inputName" placeholder="Name">
+        </div>
+
+        <div class="form-group">
+          <label for="inputEmail">Email</label>
+          <input class="form-control" type="email"
+            id="inputEmail" placeholder="Email">
+        </div>
+
+        <div class="form-group">
+          <label for="selectSite">Site</label>
+          <select class="form-control" id="selectSite">
+            <option>Choose...</option>
+            <option>Youtube.com</option>
+            <option>Youtube.com</option>
+            <option>Youtube.com</option>
+          </select>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input id="inputAddList"
+              type="checkbox">Add me to e-mail blast
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="inputComments">Comments</label>
+          <textarea class="form-control"
+            id="inputComments"></textarea>
+        </div>
+
+        <input type="submit" class="btn btn-default"
+          value="submit">
+        </form>
+
+        <h2>Demo</h2>
+
+        <form class="form-horizontal">
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="inputName">Name</label>
+          <div class="col-sm-10">
+            <input class="form-control" type="text"
+              id="inputName" placeholder="Name">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="inputEmail">Email</label>
+          <div class="col-sm-10">
+            <input class="form-control" type="email"
+              id="inputEmail" placeholder="Email">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="selectSite">Site</label>
+          <div class="col-sm-10">
+            <select class="form-control" id="selectSite">
+              <option>Choose...</option>
+              <option>Youtube.com</option>
+              <option>Youtube.com</option>
+              <option>Youtube.com</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="checkbox">
+            <div class="col-sm-10 col-sm-offset-2">
+              <label>
+                <input id="inputAddList"
+                  type="checkbox">Add me to e-mail blast
+              </label>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="inputComments">Comments</label>
+          <div class="col-sm-10">
+            <textarea class="form-control"
+              id="inputComments"></textarea>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <div class="col-sm-10 col-sm-offset-2">
+            <input type="submit" class="btn btn-default"
+              value="submit">
+          </div>
+        </div>
+        </form>
+
+        <p>This was the code that was used for this demo:</p>
+
+        <ul>
+          <li><code>col-sm-2</code></li>
+          <li><code>col-sm-10</code></li>
+          <li><code>control-label</code></li>
+        </ul>
+
+        <h1>Validation Styles</h1>
+
+        <div class="form-group">
+          <label for="inputName">Name</label>
+          <input class="form-control" type="text" id="inputName" placeholder="name">
+        </div>
+
+        <h2>Demo</h2>
+
+        <div class="form-group has-success">
+          <label class="control-label" for="inputName">Name</label>
+          <input class="form-control" type="text" id="inputName" placeholder="name">
+          <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+        </div>
+
+        <p>This demo used the following classes:</p>
+        <ul>
+          <li><code>form-group has-warning</code></li>
+          <ul>
+            <li><code>has-error</code></li>
+            <li><code>has-success</code></li>
+          </ul>
+          <li><code>control-label</code></li>
+          <ul>
+            <li>This is pretty neat. It takes the <code>has-warning</code> from the parent element, and applies it to the box too.</li>
+          </ul>
+          <li>Icons</li>
+          <ul>
+            <li>Must have the class of <code>has-feedback</code></li>
+            <li>The <code>glyphicon</code> class</li>
+            <li>The <code>glyphicon-ok</code> class</li>
+            <li>The <code>form-control-feedback</code> class</li>
+          </ul>
+        </ul>
+
+        <h1>Form Input Groups</h1>
+
+        <div class="form-group">
+          <label for="inputDollars">Price</label>
+          <input clas="form-control" type="text" id="inputDollars" placeholder="$dollars">
+        </div>
+
+        <h2>Demo</h2>
+
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <input clas="form-control" type="text" id="inputDollars" placeholder=" Amount">
+            <span class="input-group-addon">.00</span>
+          </div>
+        </div>
+
+        <pre>
+          <script type="text/plain">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input clas="form-control" type="text" id="inputDollars" placeholder=" Amount">
+                <span class="input-group-addon">.00</span>
+              </div>
+            </div>
+          </script>
+        </pre>
+
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search Terms">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Search</button>
+            </span>
+          </div>
+        </div>
+
+        <pre>
+          <script type="text/plain">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search Terms">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">Search</button>
+                </span>
+              </div>
+            </div>
+          </script>
+        </pre>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<!-- End Document–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="scripts/menu.js"></script>
+
+
+</html>

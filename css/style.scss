@@ -1,0 +1,186 @@
+.bgimage {
+  background-position: center center;
+  background-size: cover;
+  background-image: url('../img/cat.jpg');
+  .container {
+    p, h1 {
+      color: white;
+      text-shadow: 2px 2px black;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+.icon {
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+.services section {
+  text-align: center;
+}
+@media(min-width: 1200px) {
+  h3 {
+    margin-top: 0;
+  }
+  .services section {
+    text-align: left;
+  }
+}
+script {
+  display: block;
+}
+
+/** ACTUAL SCSS. ALL ABOVE IS FOR DEMO PURPOSES. **/
+
+.spacer {
+  width: 100%;
+  height: 70px;
+}
+.bgimageDefault {
+  background-position: center center;
+  background-size: cover;
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+body {
+  /** HEADER START **/
+  .navbar {
+    margin-bottom: 64px;
+    .containerz {
+      width: 100vw;
+      display: flex;
+      display: -webkit-flex;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      ul {
+        li {
+          a {
+            padding: 10px;
+            -webkit-transition: color 0.5s;
+            transition: color 0.5s;
+          }
+          a:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+  /** HEADER END **/
+  /** BODY START **/
+  .container {
+    padding: 6px;
+    margin-bottom: 15px;
+    .services {
+      text-align: center;
+    }
+    table {
+      width: 100%;
+    }
+    .bgimageDefault {
+      margin-top: 55px;
+      margin-bottom: 55px;
+      .container {
+        margin: 0px;
+        padding-right: 25px;
+        ul {
+          li {
+          padding-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  /** BODY END **/
+  /** FOOTER START **/
+  /** footer {
+    margin-top: 15px;
+    width: 100%;
+    height: 35px;
+    .bgimageDefault {
+      width: 100%;
+      height: 35px;
+      .navbar-bottom {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+      }
+    }
+  } **/
+}
+
+
+/** ALL BELOW IS FOR MEDIA QUERIES. **/
+
+@media (min-width: 1024px) {
+
+  body {
+    .navbar {
+      .container {
+        width: 100vw;
+        display: flex;
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        ul {
+          margin-top: 6px;
+          li {
+            a {
+              padding: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    .navbar {
+      .container {
+        width: 100vw;
+        display: flex;
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        ul {
+          margin-top: 6px;
+          li {
+            a {
+              padding: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 425px) {
+
+}
